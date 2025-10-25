@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PC Assembler 3D Builder</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.157.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+  <header>
+    <h1>PC Assembler 3D – Builder</h1>
+  </header>
+
+  <section class="video-section">
+    <video controls poster="assets/tutorial-placeholder.jpg">
+      <source src="assets/tutorial-placeholder.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <div class="progress-container">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+
+  <main>
+    <div id="builderContainer"></div>
+
+    <div id="instructionBox">
+      <h2>Assembly Guide</h2>
+      <p id="instructionText">Choose a component to begin your build.</p>
+    </div>
+
+    <div class="controls">
+      <button id="prevStep">Previous Step</button>
+      <button id="nextStep">Next Step</button>
+      <button id="resetBuild">Reset</button>
+      <button id="exitHome">Exit to Home</button>
+    </div>
+
+    <button id="helpButton">?</button>
+    <div id="helpPopup" class="hidden">
+      <h3>Help & Tips</h3>
+      <ul>
+        <li>Click and drag parts to move them.</li>
+        <li>Scroll to zoom, right-click to pan.</li>
+        <li>You can start with any component.</li>
+        <li>Reset anytime to restart your learning.</li>
+      </ul>
+      <button id="closeHelp">Close</button>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
